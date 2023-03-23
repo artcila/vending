@@ -1,0 +1,46 @@
+{
+  "projectName": "VendingMachineGARAGE",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    }
+  ],
+  "projectServerModel": "PHP",
+  "runtime": "capacitor",
+  "targets": [
+    {
+      "name": "Vareautomater",
+      "remoteURL": "https://vend.pcin.no/",
+      "access": "ftp",
+      "ftpServer": "ftp.nutravit.no",
+      "ftpPort": 21,
+      "ftpUser": "nutrayqq",
+      "ftpPassword": "56caa9dde189c1c774eb537176be",
+      "ftpRemoteFolder": "vend.pcin.no",
+      "databaseConnectionType": "custom",
+      "db_host": "vend.pcin.no",
+      "db_port": "3306",
+      "db_user": "nutrayqq_vend",
+      "db_password": "VendingWappler",
+      "db_database": "nutrayqq_Vending_machine_wappler"
+    }
+  ],
+  "activeTarget": "Vareautomater",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "apache",
+  "projectType": "web",
+  "extensions": []
+}

@@ -1,0 +1,16 @@
+.style1 {
+    min-height: 80px
+}
+.style2 {
+    min-height: 400px;
+    height: 400px}
+.style3 {
+    min-height: 400px;
+    height: 400px;
+    max-height: 400px
+}
+.style4 {
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px
+}
