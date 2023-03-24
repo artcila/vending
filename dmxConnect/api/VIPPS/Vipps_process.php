@@ -264,7 +264,7 @@ $app->define(<<<'JSON'
         },
         "transaction": {
           "amount": 100,
-          "orderId": "ccxvxcvxbfhgfhgfd5422884bdcbsb",
+          "orderId": "NEED_CREATE_TIME1970_in_seconds_or_other_not_repetative_combination_numbers",
           "transactionText": "product"
         }
       }
@@ -297,7 +297,7 @@ $app->define(<<<'JSON'
     "outputType": "object"
   },
   {
-    "name": "api",
+    "name": "Check_order_detales",
     "module": "api",
     "action": "send",
     "options": {

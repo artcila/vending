@@ -22,24 +22,17 @@
 <body is="dmx-app" id="ProductPage">
 
 
-    <dmx-serverconnect id="serverconnect1" url="dmxConnect/api/VENDING_MACHINE/Show_all_products.php"></dmx-serverconnect>
+    <dmx-serverconnect id="Vending_show_all_products" url="dmxConnect/api/VENDING_MACHINE/Show_all_products.php"></dmx-serverconnect>
+    <dmx-serverconnect id="ButtonClick_vipps_process_start" url="dmxConnect/api/VIPPS/New%20File.php"></dmx-serverconnect>
     <div class="container">
-        <div class="d-block mw-100">
-            <button id="btn1" class="btn" onclick="window.open (https://www.pcin.no/)">Button</button>
-            <h1>Fancy display heading
-            </h1>
-
-        </div>
-        <div class="d-block" dmx-on:click="ButtonClick_vipps_process_start.load({})">
-            <h1>my amazing heading</h1>
-        </div>
 
 
     </div>
     <div class="container wappler-block pt-4 pb-4 style4">
-        <dmx-serverconnect id="ButtonClick_vipps_process_start" url="dmxConnect/api/VIPPS/New%20File.php"></dmx-serverconnect>
-        <div class="row style3" is="dmx-masonry" id="masonry1" columns-sm="3" columns-lg="4" columns-xl="5" columns-md="4" columns="2" dmx-bind:repeat="serverconnect1.data.fetch_products.data.data">
+
+        <div class="row style3" is="dmx-masonry" id="masonry1" columns-sm="3" columns-lg="4" columns-xl="5" columns-md="4" columns="2" dmx-bind:repeat="Vending_show_all_products.data.fetch_products.data.data">
             <div class="offset-md-0 col-md-4 col-sm-5 mh-100 style2 col-4" dmx-on:click="ButtonClick_vipps_process_start.load({})">
+                <dmx-value id="var1" dmx-bind:value="data[0].id" dmx-on:updated="" onupdated=""></dmx-value>
 
 
                 <div class="d-block mh-100 style1" dmx-text="name"></div>

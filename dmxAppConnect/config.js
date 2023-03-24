@@ -155,17 +155,93 @@ dmx.config({
     "masonry1": {
       "meta": [
         {
-          "type": "text",
-          "name": "id"
-        },
-        {
-          "type": "text",
-          "name": "price"
+          "name": "fetch_products",
+          "type": "object",
+          "sub": [
+            {
+              "type": "array",
+              "name": "data",
+              "sub": [
+                {
+                  "type": "array",
+                  "name": "data",
+                  "sub": [
+                    {
+                      "type": "text",
+                      "name": "id"
+                    },
+                    {
+                      "type": "text",
+                      "name": "price"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "headers",
+              "sub": [
+                {
+                  "type": "text",
+                  "name": "access-control-allow-credentials"
+                },
+                {
+                  "type": "text",
+                  "name": "access-control-allow-headers"
+                },
+                {
+                  "type": "text",
+                  "name": "access-control-allow-methods"
+                },
+                {
+                  "type": "text",
+                  "name": "access-control-allow-origin"
+                },
+                {
+                  "type": "text",
+                  "name": "cache-control"
+                },
+                {
+                  "type": "text",
+                  "name": "content-length"
+                },
+                {
+                  "type": "text",
+                  "name": "content-type"
+                },
+                {
+                  "type": "text",
+                  "name": "date"
+                },
+                {
+                  "type": "text",
+                  "name": "server"
+                },
+                {
+                  "type": "text",
+                  "name": "x-aspnet-version"
+                },
+                {
+                  "type": "text",
+                  "name": "x-aspnetmvc-version"
+                },
+                {
+                  "type": "text",
+                  "name": "x-powered-by"
+                }
+              ]
+            }
+          ]
         }
       ],
-      "outputType": "array"
+      "outputType": "object"
     },
     "repeat2": {
+      "meta": null,
+      "outputType": "text"
+    },
+    "var1": {
       "meta": null,
       "outputType": "text"
     }
