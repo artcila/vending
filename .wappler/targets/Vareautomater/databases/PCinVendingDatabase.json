@@ -2,5 +2,14 @@
   "schema": {
     "tables": {},
     "views": {}
-  }
+  },
+  "type": "mysql",
+  "connection": {
+    "host": "vend.pcin.no",
+    "port": 3306,
+    "user": "nutrayqq_vend",
+    "password": "VendingWappler",
+    "database": "nutrayqq_Vending_machine_wappler"
+  },
+  "direct": true
 }
